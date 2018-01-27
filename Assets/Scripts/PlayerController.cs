@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-	public float speed = 5;
+	[SerializeField]
+	private float speed = 5;
 	// Update is called once per frame
 	void Update () {
 		var x = Input.GetAxis("Horizontal");
