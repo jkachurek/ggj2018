@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4348229031880424}
   - component: {fileID: 95636306284408242}
-  - component: {fileID: 54933619570733906}
   - component: {fileID: 136547526625260372}
   - component: {fileID: 114650375335997506}
   - component: {fileID: 114538673462327910}
   - component: {fileID: 114628751029846414}
+  - component: {fileID: 54822795824429696}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -307,7 +307,7 @@ Transform:
   m_Father: {fileID: 4901728166028538}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54933619570733906
+--- !u!54 &54822795824429696
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a5c8da42981d8488ce03da6b00e9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  moveSpeed: 15
 --- !u!114 &114650375335997506
 MonoBehaviour:
   m_ObjectHideFlags: 1
