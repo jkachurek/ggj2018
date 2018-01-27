@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SecurityCamera
   - Collectible
+  - PlayerRenderer
   layers:
   - Default
   - TransparentFX

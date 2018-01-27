@@ -598,6 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23670efa3f85fbd48a2c878ac5512f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelSceneName: LevelTest
 --- !u!1 &1657292814
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1fa3a0abfa92c41a8b2fcbbc41cff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ConsoleGuiCamera: {fileID: 1575304266}
   SecurityScreenArray:
   - {fileID: 8400000, guid: de6995533b0e05d4c8793243f920ba25, type: 2}
   - {fileID: 8400000, guid: c0d75ea92201c2e469b1db9c99f6f2de, type: 2}

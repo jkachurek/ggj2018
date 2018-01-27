@@ -12308,6 +12308,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1135028537052992, guid: a1b3c5ec54e9d0b449eebd0bee7cbfe7, type: 2}
+      propertyPath: m_TagString
+      value: PlayerRenderer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1b3c5ec54e9d0b449eebd0bee7cbfe7, type: 2}
   m_IsPrefabParent: 0
