@@ -2,27 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[System.Serializable]
 public class SecurityCam {
 
     public string Name;
-    public Vector3 Position { get; set; }
+    public Vector3 Position;
+    public float RotationPause;
+    public float RotationBegin;
+    public float RotationEnd;
 }
 
 public class SecurityCamSystem : MonoBehaviour {
 
     public Camera SecurityCamPrefab;
-    public int SecurityCamAmt;
-    public Vector3[] SecurityCams;
-    public string test;
+    public SecurityCam[] SecurityCameras;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
-        for (int x = 0; x < SecurityCamAmt; x++)
+        for (int x = 0; x < SecurityCameras.Length; x++)
         {
-            Instantiate(SecurityCamPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            // cube.transform.position = new Vector3(x, y, 0);
+            Instantiate(SecurityCamPrefab, SecurityCameras[x].Position, Quaternion.identity);
+   
         }
 
     }
