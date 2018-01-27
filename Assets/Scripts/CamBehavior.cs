@@ -8,20 +8,29 @@ public class CamBehavior : MonoBehaviour {
 	public float AngleOfChange;
 	//public float RotationEnd;
 	public bool Clockwize;
+	public GameObject Robot;
+	
 
 	private bool paused;
 	private float pauseTimer;
 	private Vector3 angles;
 	private float stepCounter;
+	private Camera cam;
 
 	void Start () {
 		paused = true;
 		angles = transform.eulerAngles;
+		cam = GetComponent<Camera>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(paused){
+		Vector3 rayDir = Robot.transform.position - this.transform.position;
+		RaycastHit info;
+		Physics.Raycast(this.transform.position, rayDir, out info ,100);
+		if(info.transform == Robot.transform){
+			this.transform.LookAt(Robot.transform, Vector3.up);
+		} else if(paused){
 			pauseTimer += Time.deltaTime;
 			if (pauseTimer >= RotationPause){
 				paused = false;

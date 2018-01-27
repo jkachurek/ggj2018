@@ -97,6 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd12b2319b41f9459353584a4c17cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotationPause: 0
+  AngleOfChange: 0
+  Clockwize: 0
+  Robot: {fileID: 1989922804962636, guid: a1b3c5ec54e9d0b449eebd0bee7cbfe7, type: 2}
 --- !u!124 &124278668355111638
 Behaviour:
   m_ObjectHideFlags: 1
