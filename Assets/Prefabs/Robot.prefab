@@ -361,7 +361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a5c8da42981d8488ce03da6b00e9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 20
+  turnSpeed: 150
 --- !u!114 &114650375335997506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,7 +401,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 648e837ae8aa7d544835b7f17ee0a4a8, type: 3}
+  - {fileID: 2100000, guid: 335a091fc6cb56c42b05bb17538e7ad8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

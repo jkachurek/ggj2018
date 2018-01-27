@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour {
-
+	[SerializeField]
+	private string levelSceneName = "LevelTest";
 	// Use this for initialization
 	void Start () {
-
-        SceneManager.LoadScene("LevelTest", LoadSceneMode.Additive);
+        SceneManager.LoadScene(levelSceneName, LoadSceneMode.Additive);
       //  this.GetComponent<Camera>().enabled = true;
       //  this.GetComponent<Camera>().gameObject.SetActive(true);
 

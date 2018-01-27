@@ -22,5 +22,22 @@ public class PlayerCollision : MonoBehaviour {
 			_inventory.AddItem(other.gameObject);
 			Destroy(other.gameObject);
 		}
+		else if (other.GetComponent<SlidingDoor>() != null)
+		{
+			var door = other.GetComponent<SlidingDoor>();
+			if (door.hasLock)
+			{
+				var inventory = GetComponent<Inventory>();
+				if (inventory.HasItem(typeof(Key)))
+				{
+					var key = inventory.GetItem(typeof(Key));
+					inventory.RemoveItem(key);
+				}
+			}
+			else
+			{
+
+			}
+		}
 	}
 }
