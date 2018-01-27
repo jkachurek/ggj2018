@@ -1,36 +1,28 @@
 fileFormatVersion: 2
-guid: 1947121af295afc438cac31a7f719099
-timeCreated: 1517074606
-licenseType: Free
+guid: 648e837ae8aa7d544835b7f17ee0a4a8
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Armature
     100002: Body
-    100004: Bone_003
-    100006: Bone_004
-    100008: Bone_005
-    100010: Head
-    100012: Left_Upper_Arm
-    100014: polySurface125
+    100004: Head
+    100006: Left_Lower_Arm
+    100008: Left_Upper_Arm
+    100010: polySurface125
+    100012: Right_Lower_Arm
+    100014: Right_Upper_Arm
     100016: //RootNode
     100018: Wheel
-    100020: Left_Lower_Arm
-    100022: Right_Lower_Arm
-    100024: Right_Upper_Arm
     400000: Armature
     400002: Body
-    400004: Bone_003
-    400006: Bone_004
-    400008: Bone_005
-    400010: Head
-    400012: Left_Upper_Arm
-    400014: polySurface125
+    400004: Head
+    400006: Left_Lower_Arm
+    400008: Left_Upper_Arm
+    400010: polySurface125
+    400012: Right_Lower_Arm
+    400014: Right_Upper_Arm
     400016: //RootNode
     400018: Wheel
-    400020: Left_Lower_Arm
-    400022: Right_Lower_Arm
-    400024: Right_Upper_Arm
     2100000: initialShadingGroup
     4300000: polySurface125
     7400000: Default Take
