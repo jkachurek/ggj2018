@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: dd36928dde0b22a4493f78e63feaead0
-timeCreated: 1517092144
-=======
-guid: 6d4c9838535f4364c9c6e00d8a8028bb
-timeCreated: 1517092089
->>>>>>> Stashed changes
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -60,6 +53,7 @@ ModelImporter:
     4300010: object_6
     4300012: object_7
     4300014: object_8
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -134,7 +128,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
