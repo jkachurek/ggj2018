@@ -5,16 +5,16 @@ using UnityEngine;
 public class CamBehavior : MonoBehaviour {
 
 	public float RotationPause;
-	public float RotationBegin;
-	public float RotationEnd;
+	public float AngleOfChange;
+	//public float RotationEnd;
+	public bool Clockwize;
 
-	private bool isRotated;
 	private bool paused;
 	private float pauseTimer;
 	private Vector3 angles;
+	private float stepCounter;
 
 	void Start () {
-		isRotated = false;
 		paused = true;
 		angles = transform.eulerAngles;
 	}
@@ -23,28 +23,31 @@ public class CamBehavior : MonoBehaviour {
 	void Update () {
 		if(paused){
 			pauseTimer += Time.deltaTime;
-			if (pauseTimer >= 5){
+			if (pauseTimer >= RotationPause){
 				paused = false;
 				pauseTimer = 0;
 			}
 		} else {
-			if(isRotated == false){
-				transform.Rotate(Vector3.up, Time.deltaTime * 20);
-				if(transform.eulerAngles.y > 90) {
-					angles.y = 90;
-					transform.eulerAngles = angles;
-					isRotated = true;
-					paused = true;					
-				}
-			} else {
-				transform.Rotate(Vector3.up, Time.deltaTime * -20);
-				if(transform.eulerAngles.y < .5 || transform.eulerAngles.y > 359.5 ) {
-					angles.y = 0;
-					transform.eulerAngles = angles;
-					isRotated = false;
-					paused = true;					
-				}			
-			}
+			TurnCamera(Clockwize);
 		}
+	}
+
+	private void TurnCamera(bool _clockwize){
+		float step = (AngleOfChange)/5 * Time.deltaTime;
+		stepCounter += step;		
+		//reverse turn direction if counterclockwize
+		if(!Clockwize) step *= -1; 							
+		transform.Rotate(Vector3.up, step);
+		if(stepCounter >= AngleOfChange) {
+			//make sure angle is exactly what it should be.
+			float setToAngle = AngleOfChange;
+			if(!Clockwize) setToAngle = -AngleOfChange; 			
+			angles.y = angles.y + setToAngle;
+			transform.eulerAngles = angles;			
+			//reset everything
+			Clockwize = !_clockwize;
+			paused = true;		
+			stepCounter = 0;										
+		}			
 	}
 }
