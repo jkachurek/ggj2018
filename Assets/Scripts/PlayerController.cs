@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
     var x = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
     var z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-		
-    transform.Translate(x, 0, z);
+    transform.Translate(new Vector3(x, 0, z).normalized);
 	}
 }
