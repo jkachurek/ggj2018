@@ -137,7 +137,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 224060469}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 4.57, y: 0.26999998, z: 0}
   m_LocalScale: {x: 0.33675843, y: 1, z: 0.26975778}
   m_Children: []
@@ -443,7 +443,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1356496761}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.34098005, y: 1, z: 0.28660208}
   m_Children: []
@@ -622,7 +622,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1657292814}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 4.8, y: 3.85, z: 0}
   m_LocalScale: {x: 0.33675843, y: 1, z: 0.26975778}
   m_Children: []
@@ -763,7 +763,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1809417932}
-  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0.3499999, y: 3.67, z: 0}
   m_LocalScale: {x: 0.33675843, y: 1, z: 0.26975778}
   m_Children: []
@@ -778,6 +778,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1975688458}
+  - component: {fileID: 1975688459}
   m_Layer: 0
   m_Name: Security Console
   m_TagString: Untagged
@@ -802,6 +803,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1975688459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975688457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1fa3a0abfa92c41a8b2fcbbc41cff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SecurityScreenArray:
+  - {fileID: 8400000, guid: de6995533b0e05d4c8793243f920ba25, type: 2}
+  - {fileID: 8400000, guid: c0d75ea92201c2e469b1db9c99f6f2de, type: 2}
+  - {fileID: 8400000, guid: dc57b021db96f8f41a4dfee4ae1a3d53, type: 2}
+  - {fileID: 8400000, guid: d52133ce25a19b8468c41fd3fe7fdcbd, type: 2}
 --- !u!1 &2026298447
 GameObject:
   m_ObjectHideFlags: 0
