@@ -37,7 +37,7 @@ public class CamBehavior : MonoBehaviour {
 		stepCounter += step;		
 		//reverse turn direction if counterclockwize
 		if(!Clockwize) step *= -1; 							
-		transform.Rotate(Vector3.up, step);
+		transform.Rotate(Vector3.up, step, Space.World);
 		if(stepCounter >= AngleOfChange) {
 			//make sure angle is exactly what it should be.
 			float setToAngle = AngleOfChange;
