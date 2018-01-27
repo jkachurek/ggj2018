@@ -423,32 +423,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1575304266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37e3213abd40e3e4d9daa76780b47bad, type: 3}
+  m_Script: {fileID: 11500000, guid: 23670efa3f85fbd48a2c878ac5512f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SecurityCamPrefab: {fileID: 20090269466054996, guid: baaf5cde206a6104e8d926f72a0be0b0,
-    type: 2}
-  SecurityCameras:
-  - Name: Side Hallway
-    Position: {x: 4, y: 0, z: 0}
-    RotationPause: 0
-    RotationBegin: 0
-    RotationEnd: 90
-  - Name: Back Room
-    Position: {x: -4, y: 0, z: 0}
-    RotationPause: 0
-    RotationBegin: 0
-    RotationEnd: 90
-  - Name: Bank Vault
-    Position: {x: 0, y: 0, z: 4}
-    RotationPause: 0
-    RotationBegin: 0
-    RotationEnd: 90
-  - Name: Super Secret Area
-    Position: {x: 0, y: 0, z: -4}
-    RotationPause: 0
-    RotationBegin: 0
-    RotationEnd: 90
 --- !u!1 &1809417932
 GameObject:
   m_ObjectHideFlags: 0
