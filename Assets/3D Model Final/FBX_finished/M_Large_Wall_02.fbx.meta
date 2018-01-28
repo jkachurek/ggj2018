@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 07daded6c6db9b149b5487d974c1c06d
-timeCreated: 1517098612
+guid: ba206719f4bd89c408dfa965dbb70048
+timeCreated: 1517096766
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -14,7 +14,12 @@ ModelImporter:
     3300000: pasted__polySurface1
     4300000: pasted__polySurface1
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: a4784bba4aca7d242979b5c1b0458a6d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

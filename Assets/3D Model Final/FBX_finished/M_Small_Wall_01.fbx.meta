@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: be0c44a47c4971c4b8d20266b77cec21
-timeCreated: 1517098613
+guid: d8081f8988223c84c815ae2b140a8dc7
+timeCreated: 1517096766
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -12,7 +12,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: M_Small_Wall_01_finished_polySurface1
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: ebee47e8f0baac444a6acbde98e089f0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
