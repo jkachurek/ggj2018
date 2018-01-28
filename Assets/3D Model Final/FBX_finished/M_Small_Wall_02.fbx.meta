@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: a99217f6e99558c4894f8da9d544768a
-timeCreated: 1517096766
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -14,12 +12,7 @@ ModelImporter:
     3300000: pasted__M_Small_Wall_01_finished_polySurface1
     4300000: pasted__M_Small_Wall_01_finished_polySurface1
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 67ac6f9463d8d3d4faa2892e955188d6, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
