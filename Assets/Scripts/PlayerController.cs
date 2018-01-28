@@ -29,28 +29,17 @@ public class PlayerController : MonoBehaviour {
 		inputX = Input.GetAxis("Horizontal");
 		inputY = Input.GetAxis("Vertical");
 
-		
-
 		float rotation = inputX * turnSpeed * Time.deltaTime;
 		transform.Rotate(0, rotation, 0);
-		//_rigid.MoveRotation(Quaternion.LookRotation(new Vector3(0, rotation, 0)));
-		//_inputs.x = Input.GetAxis("Horizontal");
-		//_inputs.z = Input.GetAxis("Vertical");
-
-		//if (_inputs != Vector3.zero)
-		//_anim.SetBool("Walking", false);
-		//else
-		//_anim.SetBool("Walking", true);
 	}
 	private void FixedUpdate()
 	{
+		if (inputY != 0)
+			_anim.SetBool("Walking", true);
+		else
+			_anim.SetBool("Walking", false);
+
 		var movement = new Vector3(0, 0, inputY);
 		_rigid.MovePosition(_rigid.position + transform.forward * inputY * moveSpeed * Time.deltaTime);
-		//float movement = inputY * moveSpeed * Time.fixedDeltaTime;
-		//var movement = new Vector3(inputX, 0);
-		//_rigid.MovePosition(_rigid.position + movement * moveSpeed * Time.fixedDeltaTime);
-
-		//float rotation = inputX * turnSpeed * Time.fixedDeltaTime;
-		//transform.Rotate(0, rotation, 0);
 	}
 }
