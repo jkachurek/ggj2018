@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SecurityCamera
   - Collectible
+  - SecurityCamera
   - PlayerRenderer
+  - Door
   layers:
   - Default
   - TransparentFX

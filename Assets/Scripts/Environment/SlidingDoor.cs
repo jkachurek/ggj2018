@@ -6,7 +6,6 @@ public class SlidingDoor : MonoBehaviour {
 	[SerializeField]
 	public bool hasLock;
 
-	[HideInInspector]
 	private bool isOpen = false;
 
 	public void OpenDoor()
