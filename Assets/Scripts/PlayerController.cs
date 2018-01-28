@@ -33,8 +33,7 @@ public class PlayerController : MonoBehaviour {
 			_anim.SetBool("Walking", true);
 		else
 			_anim.SetBool("Walking", false);
-
-		var movement = new Vector3(0, 0, inputY);
+		
 		_rigid.MovePosition(_rigid.position + transform.forward * inputY * moveSpeed * Time.deltaTime);
 	}
 }
