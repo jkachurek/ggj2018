@@ -9,11 +9,6 @@ public class PlayerCollision : MonoBehaviour {
 	void Start () {
 		_inventory = GetComponent<Inventory>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -22,22 +17,37 @@ public class PlayerCollision : MonoBehaviour {
 			_inventory.AddItem(other.gameObject);
 			Destroy(other.gameObject);
 		}
-		else if (other.GetComponent<SlidingDoor>() != null)
+		else if (other.GetComponent<DoorTrigger>() != null)
 		{
-			var door = other.GetComponent<SlidingDoor>();
+			var door = other.GetComponent<DoorTrigger>();
 			if (door.hasLock)
 			{
-				var inventory = GetComponent<Inventory>();
-				if (inventory.HasItem(typeof(Key)))
+				Debug.Log("door is locked");
+				if (_inventory.HasItem("Key"))
 				{
-					var key = inventory.GetItem(typeof(Key));
-					inventory.RemoveItem(key);
+					Debug.Log("Key found, using it to unlock");
+					_inventory.RemoveItem("Key");
+					door.Unlock();
+					door.OpenDoor();
 				}
 			}
 			else
-			{
-
-			}
+				door.OpenDoor();
 		}
+		else if (other.GetComponent<EntryExit>() != null)
+		{
+			if (_inventory.HasItem("Transmitter"))
+			{
+				_inventory.RemoveItem("Transmitter");
+				Debug.Log("Game Win!");
+			}
+			else
+				Debug.Log("Come back with the transmitter");
+		}
+	}
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.GetComponent<DoorTrigger>())
+			other.GetComponent<DoorTrigger>().CloseDoor();
 	}
 }

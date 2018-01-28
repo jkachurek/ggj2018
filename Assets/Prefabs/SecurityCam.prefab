@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114820448005154708}
   m_Layer: 0
   m_Name: SecurityCam
-  m_TagString: MainCamera
+  m_TagString: SecurityCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1253997655091946}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &114820448005154708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd12b2319b41f9459353584a4c17cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotationPause: 3
+  AngleOfChange: 60
+  StartClockwize: 0
 --- !u!124 &124278668355111638
 Behaviour:
   m_ObjectHideFlags: 1

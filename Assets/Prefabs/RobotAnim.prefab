@@ -41,6 +41,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1078098837922166
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4749007383059950}
+  - component: {fileID: 108282361286532010}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1113856252808112
 GameObject:
   m_ObjectHideFlags: 1
@@ -216,14 +232,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4145838572768748}
   - component: {fileID: 95690694431327102}
-  - component: {fileID: 54069456485368922}
   - component: {fileID: 136596004805930544}
   - component: {fileID: 114373739309656876}
   - component: {fileID: 114727962979291682}
   - component: {fileID: 114478810140640194}
+  - component: {fileID: 54082959185661910}
   m_Layer: 0
   m_Name: RobotAnim
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,15 +264,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1989922804962636}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.93538, y: 0.00000047683716, z: -170.39902}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: 0.87567794, z: -0, w: 0.48289555}
+  m_LocalPosition: {x: 45.514637, y: 0, z: -49.37437}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 4937226227874150}
   - {fileID: 4979610656224912}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 122.25101, z: 0}
 --- !u!4 &4206247056314236
 Transform:
   m_ObjectHideFlags: 1
@@ -338,6 +354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_Children:
   - {fileID: 4575327869278396}
+  - {fileID: 4749007383059950}
   m_Father: {fileID: 4401924143819650}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -355,6 +372,19 @@ Transform:
   m_Father: {fileID: 4937226227874150}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4749007383059950
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1078098837922166}
+  m_LocalRotation: {x: 0.000000010189373, y: 0.9987931, z: -0.049116284, w: -0.000000011986117}
+  m_LocalPosition: {x: -0, y: 0.00533, z: -0.00902}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4622279738093254}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 5.631, y: 179.99998, z: 0}
 --- !u!4 &4879074085040770
 Transform:
   m_ObjectHideFlags: 1
@@ -423,7 +453,7 @@ Transform:
   m_Father: {fileID: 4145838572768748}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54069456485368922
+--- !u!54 &54082959185661910
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -436,7 +466,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!95 &95690694431327102
 Animator:
@@ -455,6 +485,42 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!108 &108282361286532010
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1078098837922166}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 0.9659229, g: 1, b: 0.38235295, a: 1}
+  m_Intensity: 5
+  m_Range: 100
+  m_SpotAngle: 75
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114373739309656876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a5c8da42981d8488ce03da6b00e9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 10
   turnSpeed: 150
 --- !u!114 &114478810140640194
 MonoBehaviour:
