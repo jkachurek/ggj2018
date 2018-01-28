@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class SecurityCam
@@ -15,6 +17,7 @@ public class SecurityConsole : MonoBehaviour
 {
     public GameObject ConsoleGuiCamera;
     public RenderTexture[] SecurityScreenArray;
+    public GameObject[] SecurityScreenTextArray;
 
     private GameObject Player;
     private GameObject PlayerRenderer;
@@ -64,7 +67,6 @@ public class SecurityConsole : MonoBehaviour
             bool onScreen = false;
             securityCam.Distance = Vector3.Distance(Player.transform.position, securityCam.SecurityCamObject.transform.position);
             securityCam.SecurityCamObject.GetComponent<Camera>().targetTexture = null;
-            securityCam.SecurityCamObject.SetActive(false);
 
             Vector3 screenPoint = securityCam.SecurityCamObject.GetComponent<Camera>().WorldToViewportPoint(Player.transform.position);
 
@@ -74,17 +76,20 @@ public class SecurityConsole : MonoBehaviour
             if (info.transform == Player.transform)
             {
                 onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
-
             }
 
-            if (onScreen) { securityCam.Distance = 0; }
+            securityCam.SecurityCamObject.SetActive(onScreen);
+
 
             List<SecurityCam> SortedSecurityCameraList = SecurityCameraList.OrderBy(o => o.Distance).ToList();
 
             for (int cameraToActivate = 0; cameraToActivate < 4; cameraToActivate++)
             {
-                SortedSecurityCameraList[cameraToActivate].SecurityCamObject.GetComponent<Camera>().targetTexture = SecurityScreenArray[cameraToActivate];
-                SortedSecurityCameraList[cameraToActivate].SecurityCamObject.SetActive(true);
+                SecurityCam currentCam = SortedSecurityCameraList[cameraToActivate];
+
+                currentCam.SecurityCamObject.GetComponent<Camera>().targetTexture = SecurityScreenArray[cameraToActivate];
+                currentCam.SecurityCamObject.SetActive(true); 
+                SecurityScreenTextArray[cameraToActivate].GetComponent<Text>().text = string.Format("CAM {0}", Convert.ToInt16(currentCam.Name.Substring(currentCam.Name.Length - 1)) + 1);
             }
         }
 
