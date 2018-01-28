@@ -89,7 +89,7 @@ public class SecurityConsole : MonoBehaviour
 
                 currentCam.SecurityCamObject.GetComponent<Camera>().targetTexture = SecurityScreenArray[cameraToActivate];
                 currentCam.SecurityCamObject.SetActive(true); 
-                SecurityScreenTextArray[cameraToActivate].GetComponent<Text>().text = string.Format("CAM {0}", Convert.ToInt16(currentCam.Name.Substring(currentCam.Name.Length - 1)) + 1);
+                SecurityScreenTextArray[cameraToActivate].GetComponent<Text>().text = string.Format("CAM {0}", currentCam.Name.Substring(currentCam.Name.Length - 2, 2));
             }
         }
 
