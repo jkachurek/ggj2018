@@ -32,12 +32,22 @@ public class PlayerCollision : MonoBehaviour {
 				{
 					var key = inventory.GetItem(typeof(Key));
 					inventory.RemoveItem(key);
+					door.OpenDoor();
 				}
 			}
 			else
 			{
-
+				Debug.Log("the door is opening");
+				door.OpenDoor();
 			}
+		}
+	}
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.GetComponent<SlidingDoor>())
+		{
+			Debug.Log("The door is closing");
+			other.GetComponent<SlidingDoor>().CloseDoor();
 		}
 	}
 }

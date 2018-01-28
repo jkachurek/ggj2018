@@ -118,7 +118,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19164
+  m_Name: pb_Mesh67512
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -2297,7 +2297,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 330033412}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &330033416
 Behaviour:
   m_ObjectHideFlags: 0
@@ -3440,7 +3440,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516129935}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &516129937
 Behaviour:
   m_ObjectHideFlags: 0
@@ -3511,6 +3511,90 @@ MonoBehaviour:
   RotationPause: 2
   AngleOfChange: 20
   Clockwize: 0
+--- !u!1 &577247874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 577247875}
+  - component: {fileID: 577247879}
+  - component: {fileID: 577247878}
+  - component: {fileID: 577247877}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Door
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577247875
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 577247874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.889, y: 4.35, z: -0.24}
+  m_LocalScale: {x: 8.558198, y: 10.630192, z: 0.048565924}
+  m_Children: []
+  m_Father: {fileID: 977754864}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &577247877
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 577247874}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 9739ec26e7a8f1e46a761fb0c2c7b445, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &577247878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 577247874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 27.229029}
+  m_Center: {x: 0, y: 0, z: -2.3311114}
+--- !u!33 &577247879
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 577247874}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &629527727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,7 +4013,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 678261224}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &678261226
 Behaviour:
   m_ObjectHideFlags: 0
@@ -5470,7 +5554,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837110323}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &837110327
 Behaviour:
   m_ObjectHideFlags: 0
@@ -5577,7 +5661,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854091736}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &854091738
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6086,7 +6170,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895133821}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &895133825
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6541,7 +6625,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912379309}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &912379311
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6617,7 +6701,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19404
+  m_Name: pb_Mesh67762
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -7659,6 +7743,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 977754864}
+  - component: {fileID: 977754866}
+  - component: {fileID: 977754865}
   m_Layer: 0
   m_Name: SlidingDoor
   m_TagString: Untagged
@@ -7677,9 +7763,34 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1577799692}
+  - {fileID: 577247875}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &977754865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977754863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66086b7835379f49bba823238e8c53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasLock: 0
+--- !u!65 &977754866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977754863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.792259, y: 10.73177, z: 10.352081}
+  m_Center: {x: 6.8961296, y: 4.865885, z: 0.11135864}
 --- !u!1 &991165151
 GameObject:
   m_ObjectHideFlags: 0
@@ -8118,7 +8229,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1020845464}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1020845468
 Behaviour:
   m_ObjectHideFlags: 0
@@ -8297,7 +8408,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19358
+  m_Name: pb_Mesh67714
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -8492,7 +8603,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19108
+  m_Name: pb_Mesh67446
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -9538,7 +9649,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-659848
+  m_Name: pb_Mesh67820
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -11194,7 +11305,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1547219485}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1547219489
 Behaviour:
   m_ObjectHideFlags: 0
@@ -11385,7 +11496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1571426145
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11479,7 +11590,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1288660399}
@@ -12973,7 +13084,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1797907008}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1797907012
 Behaviour:
   m_ObjectHideFlags: 0
