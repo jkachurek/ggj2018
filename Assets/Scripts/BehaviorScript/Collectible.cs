@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spin : MonoBehaviour {
+public class Collectible : MonoBehaviour {
+	[SerializeField]
+	private string itemName;
 	[SerializeField]
 	private float speed = 50;
 	[SerializeField]
