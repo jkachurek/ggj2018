@@ -9,11 +9,6 @@ public class PlayerCollision : MonoBehaviour {
 	void Start () {
 		_inventory = GetComponent<Inventory>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -28,17 +23,26 @@ public class PlayerCollision : MonoBehaviour {
 			if (door.hasLock)
 			{
 				Debug.Log("door is locked");
-				var inventory = GetComponent<Inventory>();
-				if (inventory.HasItem("Key"))
+				if (_inventory.HasItem("Key"))
 				{
 					Debug.Log("Key found, using it to unlock");
-					inventory.RemoveItem("Key");
+					_inventory.RemoveItem("Key");
 					door.Unlock();
 					door.OpenDoor();
 				}
 			}
 			else
 				door.OpenDoor();
+		}
+		else if (other.GetComponent<EntryExit>() != null)
+		{
+			if (_inventory.HasItem("Transmitter"))
+			{
+				_inventory.RemoveItem("Transmitter");
+				Debug.Log("Game Win!");
+			}
+			else
+				Debug.Log("Come back with the transmitter");
 		}
 	}
 	private void OnTriggerExit(Collider other)
