@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour {
 	private Inventory _inventory;
+
+	public Sprite endGameLose;
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +43,7 @@ public class PlayerCollision : MonoBehaviour {
 			{
 				_inventory.RemoveItem("Transmitter");
 				Debug.Log("Game Win!");
+				ShowWinScreen();
 			}
 			else
 				Debug.Log("Come back with the transmitter");
@@ -49,5 +53,12 @@ public class PlayerCollision : MonoBehaviour {
 	{
 		if (other.GetComponent<DoorTrigger>())
 			other.GetComponent<DoorTrigger>().CloseDoor();
+	}
+
+	private void ShowWinScreen()
+	{
+		var endGameScreen = GameObject.FindGameObjectWithTag("EndGameScreen");
+		endGameScreen.GetComponent<Image>().enabled = true;
+		endGameScreen.GetComponent<Image>().sprite = endGameLose;
 	}
 }
