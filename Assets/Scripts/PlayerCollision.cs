@@ -58,8 +58,7 @@ public class PlayerCollision : MonoBehaviour {
 
 	private void ShowWinScreen()
 	{
-		var endGameScreen = GameObject.FindGameObjectWithTag("EndGameScreen");
-		endGameScreen.GetComponent<Image>().enabled = true;
-		endGameScreen.GetComponent<Image>().sprite = endGameLose;
+		var mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+		mainCamera.GetComponent<Game>().WinGame();
 	}
 }
