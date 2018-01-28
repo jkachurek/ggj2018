@@ -85,7 +85,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1253997655091946}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &114820448005154708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,8 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RotationPause: 3
   AngleOfChange: 60
-  Clockwize: 0
-  Robot: {fileID: 1989922804962636, guid: a1b3c5ec54e9d0b449eebd0bee7cbfe7, type: 2}
+  StartClockwize: 0
 --- !u!124 &124278668355111638
 Behaviour:
   m_ObjectHideFlags: 1
