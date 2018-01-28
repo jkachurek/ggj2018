@@ -17,6 +17,7 @@ public class PlayerCollision : MonoBehaviour {
 	{
 		if (other.tag == "Collectible")
 		{
+			GetComponent<Animator>().SetTrigger("Joy");
 			_inventory.AddItem(other.gameObject);
 			Destroy(other.gameObject);
 		}
