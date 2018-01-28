@@ -1,58 +1,16 @@
 fileFormatVersion: 2
-guid: 7d13353bef073304f984e21b257e06c2
+guid: a979699976b6ec148bd7329a0db88447
+timeCreated: 1517098613
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: object_1
-    100004: object_2
-    100006: object_3
-    100008: object_4
-    100010: object_5
-    100012: object_6
-    100014: object_7
-    100016: object_8
     400000: //RootNode
-    400002: object_1
-    400004: object_2
-    400006: object_3
-    400008: object_4
-    400010: object_5
-    400012: object_6
-    400014: object_7
-    400016: object_8
-    2100000: object_1Mat
-    2100002: object_2Mat
-    2100004: object_3Mat
-    2100006: object_4Mat
-    2100008: object_5Mat
-    2100010: object_6Mat
-    2100012: object_7Mat
-    2100014: object_8Mat
-    2300000: object_1
-    2300002: object_2
-    2300004: object_3
-    2300006: object_4
-    2300008: object_5
-    2300010: object_6
-    2300012: object_7
-    2300014: object_8
-    3300000: object_1
-    3300002: object_2
-    3300004: object_3
-    3300006: object_4
-    3300008: object_5
-    3300010: object_6
-    3300012: object_7
-    3300014: object_8
-    4300000: object_1
-    4300002: object_2
-    4300004: object_3
-    4300006: object_4
-    4300008: object_5
-    4300010: object_6
-    4300012: object_7
-    4300014: object_8
+    2100000: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: polySurface46
     9500000: //RootNode
   externalObjects: {}
   materials:
