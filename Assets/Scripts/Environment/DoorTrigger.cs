@@ -15,15 +15,13 @@ public class DoorTrigger : MonoBehaviour {
 	{
 		Debug.Log("Door is opening");
 		isOpen = true;
-		if (innerDoor.transform.rotation.y == 0)
-			innerDoor.transform.Rotate(0, 90, 0);
+		innerDoor.transform.Rotate(0, 90f, 0);
 	}
 	public void CloseDoor()
 	{
 		Debug.Log("Door is closing");
 		isOpen = false;
-		if (innerDoor.transform.rotation.y == 90)
-			innerDoor.transform.Rotate(0, -90, 0);
+		innerDoor.transform.Rotate(0, -90f, 0);
 	}
 
 	public void Unlock()
