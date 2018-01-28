@@ -22,32 +22,28 @@ public class PlayerCollision : MonoBehaviour {
 			_inventory.AddItem(other.gameObject);
 			Destroy(other.gameObject);
 		}
-		else if (other.GetComponent<SlidingDoor>() != null)
+		else if (other.GetComponent<DoorTrigger>() != null)
 		{
-			var door = other.GetComponent<SlidingDoor>();
+			var door = other.GetComponent<DoorTrigger>();
 			if (door.hasLock)
 			{
+				Debug.Log("door is locked");
 				var inventory = GetComponent<Inventory>();
-				if (inventory.HasItem(typeof(Key)))
+				if (inventory.HasItem("Key"))
 				{
-					var key = inventory.GetItem(typeof(Key));
-					inventory.RemoveItem(key);
+					Debug.Log("Key found, using it to unlock");
+					inventory.RemoveItem("Key");
+					door.Unlock();
 					door.OpenDoor();
 				}
 			}
 			else
-			{
-				Debug.Log("the door is opening");
 				door.OpenDoor();
-			}
 		}
 	}
 	private void OnTriggerExit(Collider other)
 	{
-		if (other.GetComponent<SlidingDoor>())
-		{
-			Debug.Log("The door is closing");
-			other.GetComponent<SlidingDoor>().CloseDoor();
-		}
+		if (other.GetComponent<DoorTrigger>())
+			other.GetComponent<DoorTrigger>().CloseDoor();
 	}
 }
