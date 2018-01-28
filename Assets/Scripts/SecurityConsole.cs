@@ -66,7 +66,7 @@ public class SecurityConsole : MonoBehaviour
         {
             bool onScreen = false;
             securityCam.Distance = Vector3.Distance(Player.transform.position, securityCam.SecurityCamObject.transform.position);
-            securityCam.SecurityCamObject.GetComponent<Camera>().targetTexture = null;
+          //  securityCam.SecurityCamObject.GetComponent<Camera>().targetTexture = null;
 
             Vector3 screenPoint = securityCam.SecurityCamObject.GetComponent<Camera>().WorldToViewportPoint(Player.transform.position);
 
