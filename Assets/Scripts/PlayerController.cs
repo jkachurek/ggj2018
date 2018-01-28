@@ -8,13 +8,8 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField]
 	private float turnSpeed = 10f;
 
-
-	Quaternion targetRotation;
-
-
 	private float inputX = 0f;
-	private float inputY = 0f;
-	
+	private float inputY = 0f;	
 
 	Animator _anim;
 	Rigidbody _rigid;
