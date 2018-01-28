@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: d08aceacddcd40846b62b7d0ff4aadff
-timeCreated: 1517096766
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -12,12 +10,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: M_Key_finished_pCylinder1
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 2ff012ac7d877b04aafa8a392ea5df41, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

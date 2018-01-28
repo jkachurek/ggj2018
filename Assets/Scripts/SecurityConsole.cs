@@ -61,23 +61,32 @@ public class SecurityConsole : MonoBehaviour
     {
         foreach (SecurityCam securityCam in SecurityCameraList)
         {
+            bool onScreen = false;
             securityCam.Distance = Vector3.Distance(Player.transform.position, securityCam.SecurityCamObject.transform.position);
             securityCam.SecurityCamObject.GetComponent<Camera>().targetTexture = null;
             securityCam.SecurityCamObject.SetActive(false);
 
-            //   Vector3 screenPoint = securityCam.SecurityCamObject.GetComponent<Camera>().WorldToViewportPoint(Player.transform.position);
-            //   bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            Vector3 screenPoint = securityCam.SecurityCamObject.GetComponent<Camera>().WorldToViewportPoint(Player.transform.position);
 
+            Vector3 rayDir = Player.transform.position - securityCam.SecurityCamObject.transform.position;
+            RaycastHit info;
+            Physics.Raycast(securityCam.SecurityCamObject.transform.position, rayDir, out info, 100);
+            if (info.transform == Player.transform)
+            {
+                onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+
+            }
+
+            if (onScreen) { securityCam.Distance = 0; }
+
+            List<SecurityCam> SortedSecurityCameraList = SecurityCameraList.OrderBy(o => o.Distance).ToList();
+
+            for (int cameraToActivate = 0; cameraToActivate < 4; cameraToActivate++)
+            {
+                SortedSecurityCameraList[cameraToActivate].SecurityCamObject.GetComponent<Camera>().targetTexture = SecurityScreenArray[cameraToActivate];
+                SortedSecurityCameraList[cameraToActivate].SecurityCamObject.SetActive(true);
+            }
         }
-
-        List<SecurityCam> SortedSecurityCameraList = SecurityCameraList.OrderBy(o => o.Distance).ToList();
-
-        for (int cameraToActivate = 0; cameraToActivate < 4; cameraToActivate++)
-        {
-            SortedSecurityCameraList[cameraToActivate].SecurityCamObject.GetComponent<Camera>().targetTexture = SecurityScreenArray[cameraToActivate];
-            SortedSecurityCameraList[cameraToActivate].SecurityCamObject.SetActive(true);
-        }
-
 
     }
 }
