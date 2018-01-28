@@ -71,6 +71,7 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         audioSource.Stop();
+        SecurityScreenEndGame.GetComponent<Image>().enabled = true;
         SecurityScreenEndGame.GetComponent<Image>().sprite = EndGame_Lose;
     }
 }
