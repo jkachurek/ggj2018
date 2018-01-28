@@ -5,9 +5,16 @@ using UnityEngine;
 public class Spin : MonoBehaviour {
 	[SerializeField]
 	private float speed = 50;
-	
+	[SerializeField]
+	private bool x = false;
+	[SerializeField]
+	private bool y = false;
+	[SerializeField]
+	private bool z = true;
+
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(new Vector3(0, 0, 1), speed * Time.deltaTime);
+		var rotation = new Vector3(x ? 1 : 0, y ? 1 : 0, z ? 1 : 0);
+		transform.Rotate(rotation, speed * Time.deltaTime);
 	}
 }
