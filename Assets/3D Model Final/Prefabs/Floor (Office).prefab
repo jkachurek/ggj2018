@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33542161340117802}
   - component: {fileID: 23921066406322280}
   - component: {fileID: 95537831371258724}
+  - component: {fileID: 65150572115112876}
   m_Layer: 0
   m_Name: Floor (Office)
   m_TagString: Untagged
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1258067590381454}
   m_Mesh: {fileID: 4300000, guid: 972fb73f118b9eb47936c8aedc681447, type: 3}
+--- !u!65 &65150572115112876
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258067590381454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.997311, y: 0.046332717, z: 10.056269}
+  m_Center: {x: -0.009483576, y: -0.000042839907, z: -0.0000030994415}
 --- !u!95 &95537831371258724
 Animator:
   serializedVersion: 3

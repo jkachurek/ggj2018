@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelTest-John.unity
     guid: 258166c7b3a163446ac45b738a4d7b67
+  - enabled: 1
+    path: Assets/Scenes/LevelFinal.unity
+    guid: f773e68523546464ba598e5183519a03
