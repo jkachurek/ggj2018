@@ -4,6 +4,8 @@
 /[Bb]uild/
 /[Bb]uilds/
 /Assets/AssetStoreTools*
+/TransceiverRetriever_Data/
+/TransceiverRetriever_Debug_Data/
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -32,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+TransceiverRetriever.exe
+TransceiverRetriever_Debug.exe
