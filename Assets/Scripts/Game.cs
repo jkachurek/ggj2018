@@ -74,4 +74,10 @@ public class Game : MonoBehaviour
         SecurityScreenEndGame.GetComponent<Image>().enabled = true;
         SecurityScreenEndGame.GetComponent<Image>().sprite = EndGame_Lose;
     }
+
+	public void WinGame()
+	{
+		SecurityScreenEndGame.GetComponent<Image>().enabled = true;
+		SecurityScreenEndGame.GetComponent<Image>().sprite = EndGame_Win;
+	}
 }

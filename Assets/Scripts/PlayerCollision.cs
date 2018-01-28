@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour {
 	private Inventory _inventory;
+
+	public Sprite endGameLose;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +17,7 @@ public class PlayerCollision : MonoBehaviour {
 	{
 		if (other.tag == "Collectible")
 		{
+			GetComponent<Animator>().SetTrigger("Joy");
 			_inventory.AddItem(other.gameObject);
 			Destroy(other.gameObject);
 		}
@@ -40,6 +44,7 @@ public class PlayerCollision : MonoBehaviour {
 			{
 				_inventory.RemoveItem("Transmitter");
 				Debug.Log("Game Win!");
+				ShowWinScreen();
 			}
 			else
 				Debug.Log("Come back with the transmitter");
@@ -49,5 +54,11 @@ public class PlayerCollision : MonoBehaviour {
 	{
 		if (other.GetComponent<DoorTrigger>())
 			other.GetComponent<DoorTrigger>().CloseDoor();
+	}
+
+	private void ShowWinScreen()
+	{
+		var mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+		mainCamera.GetComponent<Game>().WinGame();
 	}
 }
