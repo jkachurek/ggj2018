@@ -843,7 +843,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 675655292}
   serializedVersion: 5
-  lengthInSec: 2
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -4613,6 +4613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23670efa3f85fbd48a2c878ac5512f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   SecurityScreenBattery: {fileID: 591616006}
   BatteryLife:
   - {fileID: 21300000, guid: c632e44cfa0dabf458af9b2ae039cc85, type: 3}
@@ -4621,6 +4622,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 61f8a46f566c6a14684b151666248bae, type: 3}
   - {fileID: 21300000, guid: c5209dc5d723e0a4587da63ccaf33ce7, type: 3}
   TimeToLive: 5
+  BlowUp: {fileID: 675655292}
   levelSceneName: LevelTest
 --- !u!82 &1575304272
 AudioSource:
