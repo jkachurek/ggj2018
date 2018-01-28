@@ -17,6 +17,8 @@ public class SecurityConsole : MonoBehaviour
     public RenderTexture[] SecurityScreenArray;
 
     private GameObject Player;
+    private GameObject PlayerRenderer;
+
     private List<SecurityCam> SecurityCameraList = new List<SecurityCam>();
 
     // Use this for initialization
@@ -24,7 +26,7 @@ public class SecurityConsole : MonoBehaviour
     {
 
         StartCoroutine(InitializeSecurityCams());
-        InvokeRepeating("ChangeCameraViews", 5.0f, 5.0f);
+        InvokeRepeating("ChangeCameraViews", 1.0f, 5.0f);
     }
 
     IEnumerator InitializeSecurityCams()
@@ -34,6 +36,7 @@ public class SecurityConsole : MonoBehaviour
         yield return 0;
 
         Player = GameObject.FindGameObjectWithTag("Player");
+        PlayerRenderer = GameObject.FindGameObjectWithTag("PlayerRenderer");
 
         var securityCamObjectArray = GameObject.FindGameObjectsWithTag("SecurityCamera");
         foreach (GameObject securityCamObj in securityCamObjectArray)
@@ -62,10 +65,9 @@ public class SecurityConsole : MonoBehaviour
             securityCam.SecurityCamObject.GetComponent<Camera>().targetTexture = null;
             securityCam.SecurityCamObject.SetActive(false);
 
-            Vector3 screenPoint = securityCam.SecurityCamObject.GetComponent<Camera>().WorldToViewportPoint(Player.transform.position);
-            bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            //   Vector3 screenPoint = securityCam.SecurityCamObject.GetComponent<Camera>().WorldToViewportPoint(Player.transform.position);
+            //   bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
 
-            if (onScreen) { securityCam.Distance = 0; }
         }
 
         List<SecurityCam> SortedSecurityCameraList = SecurityCameraList.OrderBy(o => o.Distance).ToList();
