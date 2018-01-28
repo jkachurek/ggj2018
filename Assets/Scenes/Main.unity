@@ -4696,7 +4696,7 @@ MonoBehaviour:
   SecurityScreenEndGame: {fileID: 376542216}
   EndGame_Win: {fileID: 21300000, guid: 4b33d7e67bc824d4492d8e95b5bf04ed, type: 3}
   EndGame_Lose: {fileID: 21300000, guid: 50948c4927c19624cbf4e443dde26a64, type: 3}
-  levelSceneName: LevelFinal
+  levelSceneName: LevelFinalBilly
 --- !u!82 &1575304272
 AudioSource:
   m_ObjectHideFlags: 0
