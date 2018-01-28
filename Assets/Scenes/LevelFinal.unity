@@ -7056,7 +7056,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam1
+      value: SecurityCam01
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -15571,7 +15571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam8
+      value: SecurityCam08
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalScale.y
@@ -17520,7 +17520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &627920265
 Transform:
   m_ObjectHideFlags: 0
@@ -25194,7 +25194,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam2
+      value: SecurityCam02
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -31305,7 +31305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam3
+      value: SecurityCam03
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -39450,7 +39450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam4
+      value: SecurityCam04
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -42605,7 +42605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam5
+      value: SecurityCam05
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalScale.x
@@ -47219,7 +47219,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 115.83
+      value: 46.7
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -47227,7 +47227,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -44.63
+      value: -45.1
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -47235,7 +47235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.9987386
+      value: 0.9406024
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -47243,7 +47243,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.050212175
+      value: 0.3395102
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_RootOrder
@@ -47263,7 +47263,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 174.244
+      value: 140.306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
@@ -48709,7 +48709,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam9
+      value: SecurityCam09
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalScale.x
@@ -57746,7 +57746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam6
+      value: SecurityCam06
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalScale.x
@@ -57781,15 +57781,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 144.57
+      value: 127.3
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.25
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -103.59
+      value: -103.2
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -57813,7 +57813,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1253997655091946, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_Name
-      value: SecurityCam7
+      value: SecurityCam07
       objectReference: {fileID: 0}
     - target: {fileID: 4977233525437846, guid: baaf5cde206a6104e8d926f72a0be0b0, type: 2}
       propertyPath: m_LocalScale.x
