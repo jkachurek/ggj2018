@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4930182335198738}
   - component: {fileID: 95117441549141348}
+  - component: {fileID: 65860727435652700}
   m_Layer: 0
   m_Name: B_Office_Combo
   m_TagString: Untagged
@@ -243,8 +244,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222726721076778}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3161, y: 0.05942726, z: -18.18}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -98.769226, y: 0.058267713, z: -8.306721}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4656570692651220}
@@ -544,6 +545,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580676238052698}
   m_Mesh: {fileID: 4300004, guid: a1b0394f969f3d74283074adb0e75b04, type: 3}
+--- !u!65 &65860727435652700
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222726721076778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0599518, y: 1.1828482, z: 1.2450271}
+  m_Center: {x: -1.054245, y: 0.09142411, z: 0.62341905}
 --- !u!95 &95117441549141348
 Animator:
   serializedVersion: 3
