@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CnControls;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,8 +22,8 @@ public class PlayerController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		inputX = Input.GetAxis("Horizontal");
-		inputY = Input.GetAxis("Vertical");
+		inputX = CnInputManager.GetAxis("Horizontal");
+		inputY = CnInputManager.GetAxis("Vertical");
 
 		float rotation = inputX * turnSpeed * Time.deltaTime;
 		transform.Rotate(0, rotation, 0);
