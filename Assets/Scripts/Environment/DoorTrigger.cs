@@ -9,7 +9,7 @@ public class DoorTrigger : MonoBehaviour {
 	private GameObject innerDoor;
 
 	[HideInInspector]
-	private bool isOpen = false;
+	public bool isOpen = false;
 
 	public void OpenDoor()
 	{

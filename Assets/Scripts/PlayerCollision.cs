@@ -52,7 +52,7 @@ public class PlayerCollision : MonoBehaviour {
 	}
 	private void OnTriggerExit(Collider other)
 	{
-		if (other.GetComponent<DoorTrigger>())
+		if (other.GetComponent<DoorTrigger>().isOpen)
 			other.GetComponent<DoorTrigger>().CloseDoor();
 	}
 
